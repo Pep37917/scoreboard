@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+    <title>scoreboard</title>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">
+            <i class="fas fa-basketball-ball"></i>
+        </div>
+        <div class="home">
+            <h3 class="title">HOME</h3>
+            <div class="score-h score">
+                <h3 id="home-score" class="value">0</h3>
+            </div>
+            <div id="h-buttons" class="btn-container">
+                <button id="h+1" class="btn" onclick="hplus1()">+1</button>
+                <button id="h+2" class="btn" onclick="hplus2()">+2</button>
+                <button id="h+3" class="btn" onclick="hplus3()">+3</button>
+            </div>
+        </div>
+        <div class="guest">
+            <h3 class="title">GUEST</h3>
+            <div class="score-g score">
+                <h3 id="guest-score" class="value">0</h3>
+            </div>
+            <div id="g-buttons" class="btn-container">
+                <button id="g+1" class="btn" onclick="gplus1()">+1</button>
+                <button id="g+2" class="btn" onclick="gplus2()">+2</button>
+                <button id="g+3" class="btn" onclick="gplus3()">+3</button>
+            </div>
+        </div>
+    </div>
+    <div class="restart-btn-c">
+        <button id="restart-btn"><i class="fas fa-sync-alt"></i></button>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

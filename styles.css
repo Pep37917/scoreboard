@@ -1,0 +1,120 @@
+@font-face {
+    src: url("CursedTimerULiL.ttf");
+    font-family: CursedTimerULil;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    background-color: #eee3d6;
+    text-align: center;
+}
+
+/* classses */
+
+.title {
+    font-family: 'Verdana';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 36px;
+    color: #EEEEEE;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 575px;
+    height: 385px;
+    background: #1B244A;
+    margin: 10rem auto 2.75rem auto;
+    border-radius: 5px;
+    position: relative;
+}
+
+.logo {
+    position: absolute;
+    top: 60px;
+    left: -1;
+}
+
+.logo i {
+    font-size: 3rem;
+    color: #f38621;
+    transition: all 1s ease-in-out;
+}
+
+.logo i:hover {
+    transform: rotate(360deg);
+}
+
+.score {
+    width: 155px;
+    height: 120px;
+    background: #080001;
+    border-radius: 5px;
+    margin: 22px 0 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1.15rem;
+}
+
+.value {
+    font-family: 'CursedTimerULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 90px;
+    color: #F94F6D;
+    line-height: 80px;
+}
+
+.btn-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.btn {
+    border: 2px solid #9AABD8;
+    border-radius: 5px;
+    font-family: 'CursedTimerULiL';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    color: #9AABD8;
+    padding: 0.5rem 0.65rem 0.3rem 0.5rem;
+    background: transparent;
+    transition: all 0.4s ease-in-out;
+}
+
+.btn:hover {
+    border: 2px solid #7e8bb0;
+    color: #7e8bb0;
+}
+
+.restart-btn-c {
+    display: flex;
+    justify-content: center;
+}
+
+#restart-btn {
+    background: transparent;
+    border: none;
+    font-size: 2.75rem;
+    color: #F94F6D;
+    transition: all 0.4s ease-in-out;
+}
+
+#restart-btn:hover {
+    transform: scale(1.1);
+    color: #b73950;
+}
